@@ -17,3 +17,22 @@ docker build -t mydocker .
 
 -t mydocker: Tags the image with the name my-node-app.
 .: Specifies the current directory as the build context.
+
+### after that check local immages 
+
+docker images 
+
+## if docker file locate in differnt place use this command option -f 
+
+docker build -t my-node-app -f path/to/Dockerfile .
+
+
+### docker build commnd folder option like Dockerfile should under that folder
+
+docker build -t mytest docker/
+
+### docker argument passing while build the image --build-arg
+
+docker build -t mytest --build-arg NODE_VERSION=16 .
+
+
