@@ -53,3 +53,40 @@ docker run -d --name webserver -p 8080:80 -e ENV=production -v /host/logs:/var/l
 nginx: The image used to create the container.
 
 
+### docker ps use is for current container list which are running
+
+docker ps 
+
+
+### docker stop command to stop container here nginx is container name or id we can use
+
+docker stop nginx ubuntu
+
+
+#### docker ps -a use use for all exited and created containers 
+
+docker ps -a 
+
+
+### docker kill is force fully stop it 
+
+docker kill nginx 
+
+### docker rm command use for remove from the all container listed docker ps -a
+
+docker rm nginx ubuntu
+
+## docker images for list local images
+
+docker images
+
+## docker rmi command to remove images from the local repo list
+
+docker rmi ubuntu nginx 
+
+### docker rmi command with all list 
+docker rm $(docker ps -a -q)
+
+
+
+
