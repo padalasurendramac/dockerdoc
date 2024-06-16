@@ -35,4 +35,9 @@ docker build -t mytest docker/
 
 docker build -t mytest --build-arg NODE_VERSION=16 .
 
+## multiple args 
+
+docker build -t my-node-app --build-arg NODE_VERSION=16 --build-arg APP_ENV=production .
+
+
 
