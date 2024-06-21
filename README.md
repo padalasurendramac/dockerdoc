@@ -87,6 +87,20 @@ docker rmi ubuntu nginx
 ### docker rmi command with all list 
 docker rm $(docker ps -a -q)
 
+#### login to existing container by following command 
+docker exec -it <docker_container_id or docker_name> bash
+
+### to save exsiting images by following commit 
+
+docker commit <container_id> <your_suggest_name>
+
+### this optional add tag 
+docker tag <your_suggest_name> <your_suggest_name>:latest
+
+### docker images
+
+
+
 
 
 
