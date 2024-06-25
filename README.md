@@ -99,6 +99,12 @@ docker tag <your_suggest_name> <your_suggest_name>:latest
 
 ### docker images
 
+### docker rename existing container
+
+first stop it
+docker stop <container_id>
+docker rename <container_id> < your_suggest_name>
+docker start <your_suggest_name>
 
 
 
